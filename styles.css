@@ -1,0 +1,109 @@
+
+:root{
+  --bg:#0c0c0c;
+  --panel:#1a1a1a;
+  --panel2:#252525;
+  --line:#dddddd;
+  --muted:#9d9d9d;
+  --gold:#f0ac32;
+  --green:#4caf50;
+  --red:#ef3e3e;
+  --blue:#3da3ef;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#f3f3f3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  line-height:1.6;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:24px}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(12,12,12,.94);
+  backdrop-filter: blur(8px);
+  border-bottom:1px solid #333;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  font-weight:900;letter-spacing:2px;font-size:1.25rem
+}
+.logo{
+  width:42px;height:42px;border:3px solid var(--gold);
+  display:grid;place-items:center;background:#171717;
+  box-shadow:inset 0 0 0 2px #000;
+}
+.navlinks{display:flex;gap:10px;flex-wrap:wrap}
+.navlinks a{
+  border:2px solid #3b3b3b;background:#1a1a1a;
+  padding:8px 12px;font-size:.82rem;
+}
+.navlinks a:hover{border-color:var(--gold);color:var(--gold)}
+.hero{
+  padding:76px 0 52px;
+  border-bottom:2px solid #2c2c2c;
+}
+.kicker{color:var(--gold);letter-spacing:2px;font-weight:800}
+h1{
+  font-size:clamp(2.5rem,8vw,5.7rem);
+  line-height:.95;margin:.2em 0 .25em;
+  letter-spacing:3px;
+}
+.subtitle{font-size:clamp(1rem,2.8vw,1.4rem);color:#c7c7c7;max-width:700px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-block;padding:14px 18px;
+  border:3px solid #e7e7e7;background:#202020;
+  font-weight:800;
+  box-shadow:4px 4px 0 #000;
+}
+.btn.primary{background:var(--gold);color:#111;border-color:#f7d17f}
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:34px 0 0;
+}
+.card{
+  background:var(--panel);
+  border:3px solid #d9d9d9;
+  padding:18px;
+  min-height:150px;
+  box-shadow:4px 4px 0 #000;
+}
+.card .icon{
+  width:48px;height:48px;border:3px solid var(--gold);
+  background:#252525;display:grid;place-items:center;
+  font-size:1.4rem;margin-bottom:14px
+}
+.card h3{margin:.2em 0 .35em;font-size:1rem;letter-spacing:1px}
+.card p{margin:0;color:#bcbcbc;font-size:.92rem}
+.section{padding:54px 0}
+.section h2{font-size:2rem;letter-spacing:2px;margin:0 0 12px}
+.rule{height:3px;background:#333;margin:0 0 24px}
+.screen{
+  border:3px solid #ddd;background:#171717;padding:22px;
+}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature{
+  border:2px solid #343434;background:#222;padding:14px;
+}
+.feature b{color:var(--gold)}
+footer{border-top:2px solid #303030;padding:34px 0;color:#aaa;font-size:.9rem}
+.legal h1{font-size:2.7rem}
+.legal h2{font-size:1.25rem;color:var(--gold);margin-top:2rem}
+.legal p,.legal li{color:#c6c6c6}
+.notice{
+  border:3px solid var(--green);background:#182019;padding:16px;margin:20px 0;
+}
+.contact{
+  border:3px solid #ddd;background:#1b1b1b;padding:20px;
+}
+.small{color:#888;font-size:.85rem}
+@media(max-width:760px){
+  .grid{grid-template-columns:1fr}
+  .feature-list{grid-template-columns:1fr}
+  .nav{align-items:flex-start;flex-direction:column}
+  .hero{padding-top:46px}
+}

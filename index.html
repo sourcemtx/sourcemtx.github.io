@@ -4,60 +4,87 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>XPME — Real RPG</title>
-<meta name="description" content="Turn your real life into an RPG. Build skills, complete quests, earn XP, and level up yourself.">
+<meta name="description" content="Turn your real life into an RPG. Complete tasks, earn XP, level up skills, unlock nodes, and build your hero.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html"><span class="logo">XP</span> XPME</a>
+    <a class="brand" href="index.html">
+      <span class="logo-mark"><span class="xp">XP</span><span class="me">ME</span></span>
+      <span class="logo-word">REAL RPG</span>
+    </a>
     <nav class="navlinks">
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
+      <a class="active" href="index.html">HOME</a>
+      <a href="support.html">SUPPORT</a>
+      <a href="privacy.html">PRIVACY</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="hero">
-  <div class="wrap">
-    <div class="kicker">REAL RPG</div>
-    <h1>LEVEL UP<br>YOUR LIFE.</h1>
-    <p class="subtitle">XPME turns personal growth into a retro RPG. Complete real-world tasks, earn XP, build skills, unlock nodes, and make your character reflect your progress.</p>
-    <div class="cta-row">
-      <a class="btn primary" href="#features">VIEW FEATURES</a>
-      <a class="btn" href="support.html">GET SUPPORT</a>
-    </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">YOUR LIFE · YOUR STATS · YOUR XP</div>
+        <h1>LEVEL UP<br>YOUR LIFE.</h1>
+        <p class="lead">XPME turns personal development into a retro RPG. Complete real-world tasks, build skills, earn XP, unlock skill-tree nodes, and make your hero reflect your progress.</p>
+        <div class="btnrow">
+          <a class="btn primary" href="#features">VIEW FEATURES</a>
+          <a class="btn" href="support.html">GET SUPPORT</a>
+        </div>
+      </div>
 
-    <div class="grid" id="features">
-      <div class="card"><div class="icon">⚔</div><h3>QUESTS & TASKS</h3><p>Turn daily actions into game-like quests with XP rewards.</p></div>
-      <div class="card"><div class="icon">✦</div><h3>SKILLS & XP</h3><p>Create real-life skills, train them, and level them independently.</p></div>
-      <div class="card"><div class="icon">♛</div><h3>SKILL TREES</h3><p>Spend skill points to unlock nodes, bonuses, milestones, and mastery.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <h2>BUILD YOUR CHARACTER</h2>
-    <div class="rule"></div>
-    <div class="screen">
-      <div class="feature-list">
-        <div class="feature"><b>Hero Forge</b><br>Customize your pixel hero and unlock gear as you progress.</div>
-        <div class="feature"><b>Streaks</b><br>Build consistency and keep your momentum alive.</div>
-        <div class="feature"><b>Achievements</b><br>Earn badges for milestones and long-term progress.</div>
-        <div class="feature"><b>Offline First</b><br>Your progress is stored on your device and works without an account.</div>
+      <div class="hero-card">
+        <div class="avatar-row">
+          <img class="avatar" src="assets/hero-avatar.png" alt="XPME pixel hero">
+          <div>
+            <div class="eyebrow">HERO</div>
+            <h2 style="margin:2px 0">LV 4</h2>
+            <span class="level-badge">560 TOTAL XP</span>
+          </div>
+        </div>
+        <div class="xpbar"><span></span></div>
+        <div class="stat-grid">
+          <div class="stat"><b>🔥</b>STREAK</div>
+          <div class="stat"><b>♛</b>SKILL PTS</div>
+          <div class="stat"><b>✦</b>NODES</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="eyebrow">CORE SYSTEMS</div>
+      <h2>MAKE REAL PROGRESS FEEL LIKE A GAME</h2>
+      <div class="section-rule"></div>
+      <div class="features">
+        <div class="feature"><div class="tag">QUESTS</div><h3>TASKS THAT REWARD XP</h3><p>Create check-off, timer, counter, and milestone tasks and earn XP for actual effort.</p></div>
+        <div class="feature"><div class="tag">SKILLS</div><h3>BUILD YOUR OWN STATS</h3><p>Train anything you care about—from fitness and reading to coding, creativity, discipline, and career goals.</p></div>
+        <div class="feature"><div class="tag">TREE</div><h3>UNLOCK YOUR PATH</h3><p>Spend skill points on progression nodes, bonuses, milestones, and mastery.</p></div>
+        <div class="feature"><div class="tag">HERO</div><h3>BUILD YOUR CHARACTER</h3><p>Customize your pixel hero and unlock gear as your real-world progress grows.</p></div>
+        <div class="feature"><div class="tag">STREAKS</div><h3>KEEP MOMENTUM</h3><p>Track consistency, quests, achievements, and long-term progress without turning your life into a boring checklist.</p></div>
+        <div class="feature"><div class="tag">OFFLINE FIRST</div><h3>YOUR DATA STAYS WITH YOU</h3><p>No account required. Your core progress is stored locally on your device.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">INSIDE XPME</div>
+      <h2>RETRO RPG. REAL-WORLD PROGRESS.</h2>
+      <div class="section-rule"></div>
+      <div class="preview-grid">
+        <div class="phone-shot"><img src="assets/home-screen.jpg" alt="XPME home screen showing hero, XP, tasks, streak, and skill points"></div>
+        <div class="phone-shot"><img src="assets/skills-screen.png" alt="XPME skills screen showing custom skills and templates"></div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    © 2026 XPME · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a>
-  </div>
+  <div class="wrap">© 2026 Source MTX LLC · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></div>
 </footer>
 </body>
 </html>
